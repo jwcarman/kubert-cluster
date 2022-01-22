@@ -21,22 +21,6 @@ spec:
         - name: spring-boot
           image: docker.io/jwcarman/hello-native:1.0.5
           imagePullPolicy: IfNotPresent
-          livenessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /actuator/health/liveness
-              port: 8080
-              scheme: HTTP
-            initialDelaySeconds: 180
-            successThreshold: 1
-          readinessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /actuator/health/readiness
-              port: 8080
-              scheme: HTTP
-            initialDelaySeconds: 10
-            successThreshold: 1
           ports:
             - containerPort: 8080
               name: http

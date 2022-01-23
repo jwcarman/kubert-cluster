@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: spring-boot
-          image: docker.io/jwcarman/hello-native:1.0.7
+          image: docker.io/jwcarman/hello-native:1.0.7 # {"$imagepolicy": "flux-system:hello-native"}
           imagePullPolicy: IfNotPresent
           resources:
             limits:

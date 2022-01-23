@@ -5,3 +5,4 @@ resources:
 - gotk-sync.yaml
 - hello-native-image-policy.yml
 - hello-native-image-repo.yml
+- image-update-automation.yml

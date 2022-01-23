@@ -6,7 +6,7 @@ metadata:
   labels:
     app: hello-native
 spec:
-  replicas: 7
+  replicas: 3
   revisionHistoryLimit: 2
   selector:
     matchLabels:

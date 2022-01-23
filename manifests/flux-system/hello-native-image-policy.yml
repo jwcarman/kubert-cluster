@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: hello-native-image-policy
-  namespace: default
+  name: hello-native
+  namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: hello-native-image-repo
+    name: hello-native
   policy:
     semver:
       range: 1.0.x

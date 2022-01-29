@@ -2,19 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: martialware
-  name: martialware-spa
+  name: martialware-api
   labels:
-    app: martialware-spa
+    app: martialware-api
 spec:
   replicas: 3
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: martialware-spa
+      app: martialware-api
   template:
     metadata:
       labels:
-        app: martialware-spa
+        app: martialware-api
     spec:
       containers:
         - name: next

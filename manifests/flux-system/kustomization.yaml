@@ -5,4 +5,8 @@ resources:
 - gotk-sync.yaml
 - hello-native-image-policy.yml
 - hello-native-image-repo.yml
+- martialware-api-image-policy.yml
+- martialware-api-image-repo.yml
+- martialware-spa-image-policy.yml
+- martialware-spa-image-repo.yml
 - image-update-automation.yml

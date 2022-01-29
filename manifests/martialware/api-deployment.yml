@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: martialware
+  name: martialware-spa
+  labels:
+    app: martialware-spa
+spec:
+  replicas: 3
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: martialware-spa
+  template:
+    metadata:
+      labels:
+        app: martialware-spa
+    spec:
+      containers:
+        - name: next
+          image: docker.io/jwcarman/martialware-api:1.0.4
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+              scheme: HTTP
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+              scheme: HTTP

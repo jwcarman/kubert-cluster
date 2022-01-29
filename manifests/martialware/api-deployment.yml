@@ -34,3 +34,5 @@ spec:
               path: /actuator/health/readiness
               port: 8080
               scheme: HTTP
+      imagePullSecrets:
+        - name: regcred

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: next
-          image: docker.io/jwcarman/martialware-spa:1.0.13
+          image: docker.io/jwcarman/martialware-spa:1.0.13 # {"$imagepolicy": "flux-system:martialware-spa"}
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

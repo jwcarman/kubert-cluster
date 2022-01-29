@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: martialware-spa
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: martialware-spa
+  policy:
+    semver:
+      range: 1.0.x

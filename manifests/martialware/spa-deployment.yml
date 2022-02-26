@@ -6,7 +6,7 @@ metadata:
   labels:
     app: martialware-spa
 spec:
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 2
   selector:
     matchLabels:

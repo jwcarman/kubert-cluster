@@ -1,8 +1,0 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImageRepository
-metadata:
-  name: martialware-api
-  namespace: flux-system
-spec:
-  image: docker.io/jwcarman/martialware-api
-  interval: 1m0s

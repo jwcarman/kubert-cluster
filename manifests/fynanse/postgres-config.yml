@@ -8,3 +8,4 @@ metadata:
 data:
   POSTGRES_DB: fynanse
   POSTGRES_USER: fynanse
+

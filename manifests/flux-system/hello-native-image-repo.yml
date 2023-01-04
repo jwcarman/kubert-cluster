@@ -1,8 +1,0 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImageRepository
-metadata:
-  name: hello-native
-  namespace: flux-system
-spec:
-  image: docker.io/jwcarman/hello-native
-  interval: 1m0s

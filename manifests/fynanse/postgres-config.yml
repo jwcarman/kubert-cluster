@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: fynanse
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: fynanse
+  POSTGRES_USER: fynanse

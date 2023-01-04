@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- sealed-secrets-helm-repo.yml
+- sealed-secrets-helm-release.yml
 - hello-native-image-policy.yml
 - hello-native-image-repo.yml
 - image-update-automation.yml

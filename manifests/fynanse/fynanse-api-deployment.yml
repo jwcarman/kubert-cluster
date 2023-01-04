@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fynanse-api
-  namespace: cable
+  namespace: fynanse
   labels:
     app: fynanse-api
 spec:

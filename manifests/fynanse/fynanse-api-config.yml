@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fynanse-api
+  namespace: fynanse
+data:
+  application.properties: |-
+    spring.datasource.hikari.maximum-pool-size=25
+    spring.datasource.url=jdbc:postgresql://kubert:5432/fynanse
+    spring.datasource.username=fynanse

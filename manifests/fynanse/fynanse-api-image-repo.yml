@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: fynanse-api
+  namespace: fynanse
+spec:
+  image: docker.io/jwcarman/fynanse-api
+  interval: 1m0s
+  secretRef:
+    name: fynanse-pull-secret

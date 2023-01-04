@@ -1,0 +1,12 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: fynanse-api
+  namespace: fynanse
+spec:
+  imageRepositoryRef:
+    name: fynanse-api
+    namespace: fynanse
+  policy:
+    semver:
+      range: 1.0.x

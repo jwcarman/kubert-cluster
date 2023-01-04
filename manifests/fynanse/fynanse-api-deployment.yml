@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: spring-boot
-          image: docker.io/jwcarman/fynanse-api:1.0.3
+          image: docker.io/jwcarman/fynanse-api:1.0.3 # {"$imagepolicy": "fynanse:fynanse-api"}
           imagePullPolicy: IfNotPresent
           livenessProbe:
             failureThreshold: 3

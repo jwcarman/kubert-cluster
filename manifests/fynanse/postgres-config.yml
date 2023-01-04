@@ -6,6 +6,5 @@ metadata:
   labels:
     app: postgres
 data:
-  POSTGRES_DB: fynanse
   POSTGRES_USER: fynanse
 

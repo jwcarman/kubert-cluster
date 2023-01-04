@@ -4,7 +4,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: flux-system
@@ -14,13 +14,11 @@ spec:
         branch: main
     commit:
       author:
-        name: fluxbot
-        email: fluxbot@example.com
-      messageTemplate: |
-        An automated update from FluxBot
-        [ci skip]
+        email: fluxcdbot@users.noreply.github.com
+        name: fluxcdbot
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
-      branch: auto
+      branch: main
   update:
     path: ./manifests
     strategy: Setters
